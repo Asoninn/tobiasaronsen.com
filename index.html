@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tobias Aronsen</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <aside class="left-panel">
+      <div class="identity">
+        <button class="text-button" data-page="home">
+          <strong>TOBIAS ARONSEN</strong>
+        </button>
+
+        <p>Colorist</p>
+      </div>
+
+      <nav class="left-nav">
+        <button class="text-button" data-page="info">Info</button>
+
+        <button class="text-button" data-page="socials">Socials</button>
+      </nav>
+    </aside>
+
+    <main class="viewer">
+      <div id="content" class="content">
+        <div class="loading">Loading projects...</div>
+      </div>
+    </main>
+
+    <button id="corner" class="corner" type="button" aria-label="Close">
+      <img class="corner-logo" src="logo.png" alt="" />
+      <svg class="corner-x" viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M2 2 L18 18 M18 2 L2 18" />
+      </svg>
+    </button>
+
+    <aside class="project-wheel">
+      <div id="projectWheel" class="wheel-scroll"></div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
