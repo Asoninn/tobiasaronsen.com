@@ -331,21 +331,7 @@ function showInfo() {
             <dt>Contact</dt>
             <dd><a href="mailto:mail@tobiasaronsen.com">mail@tobiasaronsen.com</a></dd>
           </div>
-        </dl>
-      </section>
-    `;
-  });
 
-  clearActiveProject();
-}
-
-function showSocials() {
-  setLanding(false);
-
-  changeContent(() => {
-    content.innerHTML = `
-      <section class="text-page">
-        <dl class="text-list">
           <div class="text-row">
             <dt>Instagram</dt>
             <dd><a href="#" target="_blank" rel="noopener">@tobiasaronsen</a></dd>
@@ -582,9 +568,6 @@ document.querySelectorAll("[data-page]").forEach((button) => {
       showInfo();
     }
 
-    if (page === "socials") {
-      showSocials();
-    }
   });
 });
 
