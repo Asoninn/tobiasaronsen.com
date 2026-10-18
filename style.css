@@ -510,23 +510,42 @@ body {
 /* INFO / SOCIALS */
 
 .text-page {
-  max-width: 620px;
-
-  padding-top: 18vh;
-
-  font-size: 18px;
-  line-height: 1.4;
+  max-width: 760px;
 }
 
-.text-page h1 {
-  margin: 0 0 32px;
+.text-lead {
+  margin: 0 0 56px;
 
-  font-size: inherit;
+  font-size: 26px;
+  line-height: 1.35;
   font-weight: 500;
+  letter-spacing: -0.01em;
 }
 
-.text-page p {
-  margin: 0 0 18px;
+.text-list {
+  margin: 0;
+  border-top: 1px solid var(--faint);
+}
+
+.text-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 20px;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid var(--faint);
+
+  font-size: var(--fs-body);
+  line-height: 1.5;
+}
+
+.text-row dt {
+  color: var(--muted);
+}
+
+.text-row dd {
+  margin: 0;
 }
 
 .text-page a {

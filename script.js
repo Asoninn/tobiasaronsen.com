@@ -302,27 +302,36 @@ function changeContent(callback) {
 
 function showInfo() {
   setLanding(false);
+
   changeContent(() => {
     content.innerHTML = `
       <section class="text-page">
-        <h1>Info</h1>
-
-        <p>
-          Tobias Aronsen is a colorist based
-          in Oslo, Norway.
+        <p class="text-lead">
+          Tobias Aronsen is a colorist based in Oslo, Norway, working
+          across commercial and narrative projects.
         </p>
 
-        <p>
-          Working across commercial and
-          narrative projects.
-        </p>
+        <dl class="text-list">
+          <div class="text-row">
+            <dt>Role</dt>
+            <dd>Colorist</dd>
+          </div>
 
-        <p>
-          For work enquiries:<br>
-          <a href="mailto:you@email.com">
-            you@email.com
-          </a>
-        </p>
+          <div class="text-row">
+            <dt>Based</dt>
+            <dd>Oslo, Norway</dd>
+          </div>
+
+          <div class="text-row">
+            <dt>Work</dt>
+            <dd>Commercial<br>Narrative</dd>
+          </div>
+
+          <div class="text-row">
+            <dt>Contact</dt>
+            <dd><a href="mailto:mail@tobiasaronsen.com">mail@tobiasaronsen.com</a></dd>
+          </div>
+        </dl>
       </section>
     `;
   });
@@ -332,30 +341,21 @@ function showInfo() {
 
 function showSocials() {
   setLanding(false);
+
   changeContent(() => {
     content.innerHTML = `
       <section class="text-page">
-        <h1>Socials</h1>
+        <dl class="text-list">
+          <div class="text-row">
+            <dt>Instagram</dt>
+            <dd><a href="#" target="_blank" rel="noopener">@tobiasaronsen</a></dd>
+          </div>
 
-        <p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener"
-          >
-            Instagram
-          </a>
-        </p>
-
-        <p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener"
-          >
-            Vimeo
-          </a>
-        </p>
+          <div class="text-row">
+            <dt>Vimeo</dt>
+            <dd><a href="#" target="_blank" rel="noopener">vimeo.com/tobiasaronsen</a></dd>
+          </div>
+        </dl>
       </section>
     `;
   });
